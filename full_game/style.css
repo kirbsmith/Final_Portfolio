@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.topNav{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navLinks{
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  border: 1px solid black;
+  padding: 1rem 2rem;
+  transition: 0.2s;
+}
+
+.navLinks:hover{
+  color: white;
+  background: black;
+  letter-spacing: 3px;
+}
+
+#canvas1{
+  padding-top: 2rem;
+  max-width: 70%;
+  max-height: 70%;
+  align-self: center;
+}
+
+body{
+  background: rgba(155, 191, 250,0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#controlsSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+#controlsList{
+  list-style: none;
+  flex-direction: row;
+}
+
+#player, #layer1, #layer2, #layer3, #enemy_fly, #enemy_ground, #enemy_spider, #fire, #collisionAnimation, #shop{
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .topNav{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    transform: translate(0, -30%);
+    background: rgba(155, 191, 250,1);
+    z-index: 1;
+    width: 100%;
+  }
+  .navLinks{
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 3vw;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-top: 0;
+    transition: 0.3s;
+  }
+  .navLinks:hover{
+    color: white;
+    background: black;
+    letter-spacing: 0px;
+  }
+  #canvas1{
+    padding-top: 4rem;
+  }
+}

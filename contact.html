@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kirby Smith: Web Developer Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Front end web developer">
+    <meta name="keyword" content="portfolio, developer, javascript, html, css, front end, software, engineer, dev">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body id="contactPage">
+    <section class="topNav">
+      <a id="homeLink" class="navLinks" href="index.html">Home</a>
+      <a id="projectsLink" class="navLinks" href="projects.html">Projects</a>
+      <a id="gamesLink" class="navLinks" href="/full_game/games.html">Game</a>
+    </section>
+    <section id="getInTouchSection">
+      <h1 id="getInTouchHeading">Get in touch</h1>
+    </section>
+    <section id="contactFormSection">
+      <form method="POST" action="contact-form-send.php">
+        <label for="Name"></label>
+        <input type="text" id="Name" name="Name" placeholder="Your name" required>
+        <label for="Email"></label>
+        <input type="email" id="Email" name="Email" placeholder="Your email" required>
+
+        <section id="subjectSection">
+          <label for="subjectInput"></label>
+          <select placeholder="Subject line" name="subjectInput" id="subjectInput" required>
+            <option disabled hidden selected>Subject line</option>
+            <option>I'd like to ask a question</option>
+            <option>I have a project in mind</option>
+            <option>I want to make a proposal</option>
+          </select>
+        </section>
+        <label for="Message"></label>
+        <textarea id="Message" name="Message" placeholder="I'd like to talk about" cols="30" row="6" required></textarea>
+
+        <input type="submit" value="Submit" id="formButton">
+      </form>
+    </section>
+  </body>
+</html>

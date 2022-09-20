@@ -1,0 +1,4 @@
+make a "slow connection" version
+put multiple games in
+put contact info in
+make contact form

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Front end web developer">
+    <meta name="keyword" content="portfolio, developer, javascript, html, css, front end, software, engineer, dev">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="topNav">
+      <a id="homeLink" class="navLinks" href="/index.html">Home</a>
+      <a id="projectsLink" class="navLinks" href="/projects.html">Projects</a>
+      <a id="contactLink" class="navLinks" href="/contact.html">Contact</a>
+    </section>
+    <canvas id="canvas1"></canvas>
+    <img id="player" src="assets/player.png">
+    <img id="layer3"src="assets/background_layer_3.png" alt="">
+    <img id="shop" src="assets/shop.png">
+    <img id="layer2"src="assets/background_layer_2.png" alt="">
+    <img id="layer1"src="assets/background_layer_1.png" alt="">
+    <img id="enemy_fly" src="assets/enemy_fly.png">
+    <img id="enemy_ground" src="assets/enemy_ground.png">
+    <img id="enemy_spider" src="assets/enemy_spider.png">
+    <img id="fire" src="assets/fire.png">
+    <img id="collisionAnimation" src="assets/collision.png">
+    <section id="controlsSection">
+      <h2 id="controlsHeading">Controls</h2>
+      <ul id="controlsList">
+        <li><strong>Right Arrow</strong>: Move Right</li>
+        <li><strong>Left Arrow</strong>: Move Left</li>
+        <li><strong>Down Arrow</strong>: Stop Running (on ground), Downward Attack (in air)</li>
+        <li> <strong>Up Arrow</strong>: Jump</li>
+        <li><strong>Enter</strong>: Attack</li>
+      </ul>
+    </section>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
