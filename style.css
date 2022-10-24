@@ -56,7 +56,7 @@
 #imageSelf{
   width: 250px;
   height: 250px;
-  border-radius: 130px;
+  border-radius: 40px;
   padding-top: 0.8rem;
 }
 
@@ -330,6 +330,14 @@ form{
     justify-content: center;
     text-align: center;
   }
+}
+#projectsHeading{
+  display: flex;
+  justify-content: center;
+}
+#websiteClick{
+  padding: 2rem 0 0 0;
+  font-weight: 200;
 }
 
 @media (min-width: 751px) and (max-width: 1200px){
